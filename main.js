@@ -52,4 +52,3 @@ function animate() {
 setInterval(() => {
   m.push(new Rect())
 }, 1000)
-////////////////////////////
