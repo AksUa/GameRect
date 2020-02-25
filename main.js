@@ -65,7 +65,7 @@ const stop = document.querySelector(".stop")
 stop.addEventListener("click", stopik)
 let score = document.getElementById("score")
 let count = 0
-catchSquare = (event) => {
+mouse = (event) => {
   for (key of m) {
     if (
       event.clientX >= key.x + 30 &&
@@ -79,5 +79,5 @@ catchSquare = (event) => {
     }
   }
 }
-canvas.addEventListener("click", catchSquare, true)
+canvas.addEventListener("click", mouse, true)
 document.body.onload = animate
